@@ -1,0 +1,25 @@
+{
+  "name": "northwind",
+  "version": "1.0.0",
+  "description": "Team effort to present northwind data in an Angular CRUD app using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnwquarles/northwind.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnwquarles/northwind/issues"
+  },
+  "homepage": "https://github.com/johnwquarles/northwind#readme",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "chalk": "^1.1.1",
+    "express": "^4.13.3",
+    "pg": "^4.4.1"
+  }
+}
