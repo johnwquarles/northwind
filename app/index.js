@@ -16,7 +16,7 @@ app.use('/css', sassMiddleware({
 }));
 
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Hey', message: 'Hello there!'});
+  res.render('login', { title: 'Hey', message: 'Hello there!'});
 });
 
 function startNodeListener() {
