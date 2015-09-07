@@ -3,21 +3,17 @@ var app = require('express')(),
     chalk = require('chalk'),
     express = require('express'),
     sassMiddleware = require('node-sass-middleware'),
-    session = require('express-session');
+    session = require('express-session'),
+    path = require('path');
 
-var userModel = require('../models/userModel');
+var userModel = require('../models/userModel'),
+    userRoutes = require('../routes/userRoutes');
 
-app.set('views', './views');
+app.set('views', path.join(__dirname, '/../views'));
 app.set('view engine', 'jade');
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '/../public')));
+console.log("static folder is: " + path.join(__dirname, '/../public'));
 app.use(bodyParser.urlencoded({extended: false}));
-
-app.use('/css', sassMiddleware({
-  src: './views/sass',
-  dest: './public/css',
-  debug: true,
-  outputStyle: 'expanded'
-}));
 
 app.use(session({
   secret: 'ihopedubstepneverends',
@@ -30,17 +26,7 @@ app.use(function setResLocalsUser(req, res, next) {
   next();
 });
 
-app.get('/login', function (req, res) {
-  req.session.regenerate(function () {
-    res.render('login', { title: 'Login'});
-  })
-});
-
-app.get('/newUser', function (req, res) {
-  req.session.regenerate(function () {
-    res.render('newUser', { title: 'Create Account'});
-  });
-});
+app.use('/', userRoutes);
 
 // route to app is protected using the ternary below so that nonsense routes
 // will properly 404 instead of redirecting to login.
