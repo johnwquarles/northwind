@@ -1,3 +1,10 @@
-// does 'babel/register' compile frontend es6?
-var test = () => {console.log('yes it does');};
+"use strict";
+
+var test = function test() {
+  console.log("es6 is working");
+  console.log("so is livereload");
+};
+
 test();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFJLElBQUksR0FBRyxTQUFQLElBQUksR0FBUztBQUNmLFNBQU8sQ0FBQyxHQUFHLENBQUMsZ0JBQWdCLENBQUMsQ0FBQztBQUM5QixTQUFPLENBQUMsR0FBRyxDQUFDLGtCQUFrQixDQUFDLENBQUM7Q0FDakMsQ0FBQTs7QUFFRCxJQUFJLEVBQUUsQ0FBQyIsImZpbGUiOiJtYWluLmpzIiwic291cmNlc0NvbnRlbnQiOlsidmFyIHRlc3QgPSAoKSA9PiB7XG4gIGNvbnNvbGUubG9nKFwiZXM2IGlzIHdvcmtpbmdcIik7XG4gIGNvbnNvbGUubG9nKFwic28gaXMgbGl2ZXJlbG9hZFwiKTtcbn1cblxudGVzdCgpO1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJtYWluLmpzIl0sInNvdXJjZXNDb250ZW50IjpbInZhciB0ZXN0ID0gKCkgPT4ge1xuICBjb25zb2xlLmxvZyhcImVzNiBpcyB3b3JraW5nXCIpO1xuICBjb25zb2xlLmxvZyhcInNvIGlzIGxpdmVyZWxvYWRcIik7XG59XG5cbnRlc3QoKTtcbiJdLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9

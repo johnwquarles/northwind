@@ -2,7 +2,6 @@ var app = require('express')(),
     bodyParser = require('body-parser'),
     chalk = require('chalk'),
     express = require('express'),
-    sassMiddleware = require('node-sass-middleware'),
     session = require('express-session'),
     path = require('path');
 
@@ -12,7 +11,6 @@ var userModel = require('../models/userModel'),
 app.set('views', path.join(__dirname, '/../views'));
 app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, '/../public')));
-console.log("static folder is: " + path.join(__dirname, '/../public'));
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(session({
