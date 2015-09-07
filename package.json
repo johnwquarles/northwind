@@ -18,12 +18,31 @@
   "homepage": "https://github.com/johnwquarles/northwind#readme",
   "dependencies": {
     "babel": "^5.8.23",
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.13.3",
     "bower": "^1.5.2",
     "chalk": "^1.1.1",
+    "del": "^2.0.1",
     "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-open": "^1.0.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
     "jade": "^1.11.0",
-    "node-sass-middleware": "^0.9.0",
-    "pg": "^4.4.1"
+    "lodash": "^3.10.1",
+    "main-bower-files": "^2.9.0",
+    "node-sass": "^3.3.2",
+    "pg": "^4.4.1",
+    "tiny-lr": "^0.1.6"
   },
   "devDependencies": {}
 }
