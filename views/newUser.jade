@@ -2,8 +2,8 @@ extends ./partials/_layout.jade
 
 block content
   h1 Welcome to the Northwind DataPlex Prime!
-  h3 Please log in to continue!
-  form(method="POST", action="login")
+  h3 We're pleased that you've elected to join us!
+  form(method="POST", action="newUser")
 
     label(for="username") Username
     input(type="text", name="username")
@@ -11,4 +11,7 @@ block content
     label(for="password") Password
     input(type="password", name="password")
 
-    input(type="submit", value="Login")
+    label(for="passwordConfirm") Password
+    input(type="password", name="passwordConfirm")
+
+    input(type="submit", value="Create Account")
