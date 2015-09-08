@@ -5,8 +5,9 @@ var app = require('express')(),
     session = require('express-session'),
     path = require('path');
 
-var userModel = require('../models/userModel'),
-    userRoutes = require('../routes/userRoutes');
+var dbName = require(path.join(__dirname, '/../lib/dbName')),
+    userModel = require(path.join(__dirname, '../models/userModel'))(dbName),
+    userRoutes = require(path.join(__dirname, '../routes/userRoutes'));
 
 app.set('views', path.join(__dirname, '/../views'));
 app.set('view engine', 'jade');

@@ -67,7 +67,7 @@ gulp.task('default', ['compile'], function(){
     gulp.src('').pipe($.open(
       {uri: 'http://localhost:3000'}
     ))
-  }, 2000);
+  }, 3000);
 });
 
 function liveReload(event) {
